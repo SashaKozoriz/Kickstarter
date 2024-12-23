@@ -1,19 +1,14 @@
 .header {
   margin-top: 40px;
-  margin-bottom: 170px;
-  @include onTablet {
-    margin-bottom: 140px;
-  }
-  @include onMobile {
+
+  @include on-mobile {
     margin-top: 25px;
-    margin-bottom: 110px;
   }
 
   &__content {
     display: flex;
     &__text {
-      flex-basis: 34%;
-      @include onMobile {
+      @include on-mobile {
         grid-row-end: none;
       }
       &__title {
@@ -23,12 +18,14 @@
         text-transform: uppercase;
         padding-top: 80px;
         margin-bottom: 30px;
-        @include onTablet {
+
+        @include on-tablet {
           font-size: 48px;
           line-height: 62px;
           padding-top: 30px;
         }
-        @include onMobile {
+
+        @include on-mobile {
           font-size: 40px;
           line-height: 52px;
           margin-bottom: 20px;
@@ -42,7 +39,7 @@
       }
     }
 
-    @include onMobile {
+    @include on-mobile {
       display: grid;
       grid-template-rows: 1fr;
       gap: 40px;
@@ -54,7 +51,7 @@
       height: 464px;
       flex-basis: 66%;
 
-      background-image: url('/src/images/Image1.png');
+      background-image: url("/src/images/Image1.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -62,16 +59,16 @@
       max-width: 816px;
       max-height: 464px;
 
-      @include onTablet {
-        background-image: url('/src/images/Image-tablet1.png');
+      @include on-tablet {
+        background-image: url("/src/images/Image-tablet1.png");
         max-width: 430px;
         max-height: 317px;
         height: 317px;
       }
 
-      @include onMobile {
+      @include on-mobile {
         grid-row-start: auto;
-        background-image: url('/src/images/Image-mobile1.png');
+        background-image: url("/src/images/Image-mobile1.png");
         max-width: 320px;
         max-height: 245px;
         height: 245px;

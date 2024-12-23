@@ -1,12 +1,23 @@
 @import 'utils';
 @import 'typography';
+@import 'src/styles/blocks/container';
+@import 'src/styles/blocks/section';
+@import 'src/styles/blocks/page';
+@import 'src/styles/blocks/header';
+@import 'src/styles/blocks/menu';
+@import 'src/styles/blocks/nav';
+@import 'src/styles/blocks/benefits';
+@import 'src/styles/blocks/product';
+@import 'src/styles/blocks/about';
+@import 'src/styles/blocks/quote';
+@import 'src/styles/blocks/features';
 
-@import 'src/styles/blocks/container.scss';
-@import 'src/styles/blocks/header.scss';
-@import 'src/styles/blocks/nav.scss';
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: $color-dark-grey;

@@ -3,7 +3,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
-  @include onMobile {
+
+  @include on-mobile {
     margin-bottom: 25px;
   }
   &__items {
@@ -17,17 +18,27 @@
       margin-left: 0;
       margin-right: 20px;
     }
-    @include onMobile {
+
+    @include on-mobile {
       display: none;
     }
     &__burger {
       height: 32px;
       display: none;
-      @include onMobile {
+
+      @include on-mobile {
         display: block;
       }
-      @include onTablet {
+
+      @include on-tablet {
         display: block;
+      }
+    }
+    & > span {
+      margin: 0 3px;
+
+      @include on-mobile {
+        display: none;
       }
     }
   }
@@ -39,8 +50,10 @@
     &:hover {
       color: #000;
     }
-    &__lang-not-active {
+    &__lang--not-active {
       color: $color-gray;
+    }
+    &__lang-ua {
       margin-right: 48px;
     }
   }
@@ -53,7 +66,11 @@
     font-size: 12px;
     line-height: 14px;
     font-weight: 700;
-    @include onTablet {
+    &:hover {
+      background-color: $color-black;
+    }
+
+    @include on-tablet {
       margin-right: 30px;
     }
   }
